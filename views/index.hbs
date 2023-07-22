@@ -1,19 +1,33 @@
 {{!-- la idea es no replicar codigo --}}
- {{!-- para esto usamos el partials --}}
+{{!-- para esto usamos el partials --}}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     {{>estilos}}
 </head>
+
 <body>
     {{>header}}
+    {{>navbar}}
 
 
-    {{>productos}}
-    {{>codigo}}
+
+    <div class="container">
+        <h1>Bienvenido ErCompleto</h1>
+        <p>Esta es la página de inicio.</p>
+    </div>
+    <div class="container d-flex justify-content-center">
+        <img src="public/images/index.jpg" alt="">
+
+    </div>
+
+
     {{>footer}}
+    {{>codigo}}
 </body>
+
 </html>
